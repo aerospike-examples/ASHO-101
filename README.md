@@ -8,7 +8,7 @@ To get started:
        Locate the green button that says [<> Code v] and go to the bottom option Download Zip.
        Once the file is downloaded, unzip it (you can unzip it on your Desktop if that makes sense for you)
    b) For Advanced Users: Clone the repository:
-   '''
+    ``` bash
     git clone https://github.com/citrusleaf/aerospike-education.git
     ```
 3. OPEN DOCKER AND BUILD THE IMAGE.
