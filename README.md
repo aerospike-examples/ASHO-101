@@ -8,9 +8,10 @@ To get started:
        Locate the green button that says [<> Code v] and go to the bottom option Download Zip.
        Once the file is downloaded, unzip it (you can unzip it on your Desktop if that makes sense for you)
    b) For Advanced Users: Clone the repository:
+   '''
     git clone https://github.com/citrusleaf/aerospike-education.git
     ```
-2. OPEN DOCKER AND BUILD THE IMAGE.
+3. OPEN DOCKER AND BUILD THE IMAGE.
     a) For new developers:
        Open a terminal in Docker Desktop and run an ls command. Run cd and ls commands until you are in the same folder as the docker file you just downloaded as part of this project.
        Once you've navigated to the Dockerfile location you need to run a docker build command. To run the command you need to know whether your machine is AMD or ARM. Do a google search to try to figure this out. 
