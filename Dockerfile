@@ -1,4 +1,4 @@
-FROM ubuntu:24.04 as build
+FROM ubuntu:24.04 AS build
 
 # remove default ubuntu user
 RUN touch /var/mail/ubuntu && \
@@ -76,7 +76,7 @@ RUN chown -R ${ED_UID} ${HOME} /etc/aerospike /opt/aerospike /var/log/aerospike 
     chmod +x /usr/local/bin/start.sh /usr/local/bin/start_web.sh
 
 
-FROM ubuntu:24.04 as final
+FROM ubuntu:24.04 AS final
 
 USER root
 
