@@ -29,7 +29,7 @@ const Home = () => {
                 <div className={styles['about']}>
                     <h1>Welcome to VestVault</h1>
                     <h3>The premiere place for vintage fashion</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>VestVault Vintage Clothing has been providing the trendiest vintage looks to the raddest, hippest, most far-out, fashionistas since before most of our customers were born! We scour yard and garage sales, boot and jumble sales, flea markets, estate sales and beyond just to find you that exquisite one-of-a-kind piece.</p>
                     <div className={styles['links']}>
                         <Button href="/category" icon="arrow-right">Shop by category</Button>
                         <Button href="/decade" icon="arrow-right">Shop by decade</Button>
