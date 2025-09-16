@@ -72,6 +72,10 @@ COPY /setup/.bashrc ${HOME}/.bashrc
 COPY /setup/.bashrc /root/.bashrc
 COPY /setup/vscode ${HOME}/.local/share/code-server/User/
 
+# Copy your workspace file into the image
+COPY --chown=aero_edu:aero_edu setup/vscode/workspaces/vest-vault.code-workspace \
+     ${HOME}/projects/vest-vault.code-workspace
+
 RUN chown -R ${ED_UID} ${HOME} /etc/aerospike /opt/aerospike /var/log/aerospike /var/run/aerospike && \
     chmod +x /usr/local/bin/start.sh /usr/local/bin/start_web.sh
 
