@@ -1,8 +1,0 @@
-# put the workspace definition here
-{
-  "folders": [
-    { "path": "/home/aero_edu/projects/server" },
-    { "path": "/home/aero_edu/projects/website" }
-  ],
-  "settings": {}
-}
