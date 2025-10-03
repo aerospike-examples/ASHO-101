@@ -1,7 +1,12 @@
 {
-  "folders": [
-    { "path": "/home/aero_edu/projects/server" },
-    { "path": "/home/aero_edu/projects/website" }
-  ],
-  "settings": {}
+	"folders": [
+		{
+			"uri": "vscode-remote://localhost:8081/home/aero_edu/projects/server"
+		},
+		{
+			"uri": "vscode-remote://localhost:8081/home/aero_edu/projects/website"
+		}
+	],
+	"remoteAuthority": "localhost:8081",
+	"settings": {}
 }
