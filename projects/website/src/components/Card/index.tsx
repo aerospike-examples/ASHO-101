@@ -9,7 +9,7 @@ interface Props {
 const Card = ({ product }: Props) => {
     return (
         <Link 
-            to={`/products/${product.item_id}`}
+            to={`/product/${product.item_id}`}
             className={styles['card']} 
         >
             <div className={styles['card-top']}>
