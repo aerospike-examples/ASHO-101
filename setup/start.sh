@@ -7,5 +7,5 @@ code-server \
     --disable-telemetry \
     --app-name "Aerospike Education" \
     --disable-getting-started-override \
-    /home/aero_edu/projects/vest-vault.code-workspace &&
+    /home/aero_edu/.local/share/code-server/User/Workspaces/vest-vault.code-workspace &&
 exec "$@"
