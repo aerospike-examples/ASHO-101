@@ -74,7 +74,10 @@ COPY /setup/vscode ${HOME}/.local/share/code-server/User/
 
 RUN chown -R ${ED_UID} ${HOME} /etc/aerospike /opt/aerospike /var/log/aerospike /var/run/aerospike && \
     chmod +x /usr/local/bin/start.sh /usr/local/bin/start_web.sh
-
+    
+# THESE TWO LINES ARE SUPPOSED TO TAKE CARE OF THE NON-EDITABLE SERVER FOLDER ISSUE FOR WINDOWS USERS
+COPY --chown=${ED_UID}:${ED_UID} --chmod=ug=rwX /projects ${HOME}/projects/
+RUN chmod -R ug+rwX ${HOME}/projects/server && find ${HOME}/projects/server -type d -exec chmod g+s {} \;
 
 FROM ubuntu:24.04 AS final
 
